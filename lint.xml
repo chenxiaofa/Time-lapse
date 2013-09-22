@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="ParserError" severity="ignore">
+        <ignore path="src\com\slowcamera\MainActivity.java" />
+    </issue>
+    <issue id="SdCardPath" severity="ignore" />
+    <issue id="ShowToast">
+        <ignore path="src\com\slowcamera\MainActivity.java" />
+    </issue>
+</lint>

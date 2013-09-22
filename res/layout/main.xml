@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alwaysDrawnWithCache="false"
+    android:orientation="horizontal" 
+    android:background="@drawable/bgblack"
+    android:id="@+id/screen" xmlns:android1="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bgblack"
+        android:id="@+id/mainlaout" >
+
+        <SurfaceView
+            android:id="@+id/surfaceView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:configChanges="orientation" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300px"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_camera_pattern"
+        android:baselineAligned="true"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/btStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/btn_video_shutter_holo" />
+
+        <ImageButton
+            android:id="@+id/btStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btStart"
+            android:layout_alignTop="@+id/btStart"
+            android:adjustViewBounds="true"
+            android:background="@drawable/btn_video_shutter_recording_holo" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
